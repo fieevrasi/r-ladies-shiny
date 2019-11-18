@@ -343,10 +343,11 @@ Add following lines of code inside the `server()` function.
          tail(15) %>%
          ggplot(aes(Major, Median, color = Major)) +
          geom_point(size=3) +
-         geom_errorbar(aes(ymin = P25th, ymax = P75th)) +
+         geom_errorbar(aes(ymin = P25th, ymax = P75th), size=1) +
          expand_limits(y = 0) +
          coord_flip()   
     g
   })
   
 ```
+![Step 6: Dashboard](https://github.com/fieevrasi/r-ladies-shiny/blob/master/pictures/final_dashboard.PNG)
