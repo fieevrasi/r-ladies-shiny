@@ -73,7 +73,7 @@ body <- dashboardBody(
              icon = icon("star"), 
              subtitle = "Date", 
              color = "yellow",
-             width = 3),
+             width = 3)
   )
   
 )
